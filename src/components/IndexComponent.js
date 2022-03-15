@@ -48,7 +48,7 @@ function IndexComponent() {
       // When currency data is recieved put it in the right place
       ws.onmessage = function (event) {
         const json = JSON.parse(event.data);
-        localStorage.setItem ('mark_price', json.mark_price);        
+        localStorage.setItem ('mark_price', [json.mark_price]);
         console.log(json.mark_price);
       };  
 
