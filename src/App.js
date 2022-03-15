@@ -1,20 +1,12 @@
 import './App.css';
-import Row from './components/MemberRow.js';
-import Wss from './components/websocket';
-
-
+import IndexComponent from './components/IndexComponent.js';
 
 function App() {
 
-  
   return (
-      
-    <div className="App">
-             
-        <Row />
-       <Wss /> 
-      </div>
-       
+    <div className="App">     
+      <IndexComponent />
+    </div>
    );
 }
 
